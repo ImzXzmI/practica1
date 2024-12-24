@@ -1,10 +1,12 @@
 :root {   
     --el: 0;   
-    --primary-color: #000000; 
+    --primary-color: #000000cf; 
     --secondary-color: #4b0096; 
     --background-color: #000000; 
     --border-color: #000000; 
-    --text-color: #ff0000; 
+    --text-color: #ffffff; 
+    --width: 500px;
+    --height: 500px;
 }
 
 body {  
@@ -17,30 +19,34 @@ body {
     padding: 20px;  
 } 
 
-.container {
-    display: flex; 
+.zdes_slaider {
+    display: block; 
     justify-content: center; 
     align-items: center; 
-    flex-direction: column;
-    margin: 2vw;
-    padding: 3vw;
+    margin: 3vw;
+    padding: 2vw;
     width: 90%;
-    background-color: #000000e4;
+    background-color: #000000c9;
     border: 3px solid rgb(255, 0, 0);
     border-radius: 8px;
 } 
 
-h1 {
-    color: var(--text-color);
-    margin-bottom: 20px;
+.sladery{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
+h1 {
+    text-align: center; /* Центрируем текст по горизонтали */
+    color: var(--text-color); /* Цвет текста */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
 img {   
-    height: 410px;   
-    width: 500px;   
-
-
-
+    height: var(--height);   
+    width: var(--width);   
 }
 
  
@@ -53,14 +59,45 @@ img {
 .slids {   
     border: 3PX solid #ff0000;
     overflow: hidden;   
-    width: 500px;  
-    height: 410px; 
+    width: var(--width);  
+    height: var(--height);  
     display: flex;   
     margin-bottom: 20px; 
     border-radius: 12px; 
     box-shadow: 0 4px 15px rgb(0, 0, 0), 0 1px 5px rgb(0, 0, 0); 
     background: rgb(0, 0, 0); 
 }  
+
+.slider1 {
+    display: flex;
+    flex-direction: column; /* Вертикальное направление */
+    overflow: hidden;
+    width: 500px;
+    height: 500px; /* Высота контейнера слайдера */
+    position: relative;
+}
+
+.def1 {
+    min-height: var(--height); /* Высота каждого слайда */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transition: transform 1s ease;   
+    transform: translateY(var(--el));   
+}
+.knopki {
+    display: flex; 
+    justify-content: center; /* Центрируем кнопки по горизонтали */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.controls {
+    display: flex; /* Размещаем кнопки в строку */
+    gap: 10px; /* Отступ между кнопками */
+}
+
 
 input { 
     padding: 12px; 
@@ -101,6 +138,13 @@ button:active {
     align-items: center; 
     margin-bottom: 20px; 
 } 
+
+.slide_number {
+
+    font-weight: bold; /* Жирный текст */
+    color: #ffffff; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+}
 
 @media (max-width: 800px) {
     img {

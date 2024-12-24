@@ -12,8 +12,8 @@
 } 
 
 .square h4, p { 
-    padding-left: 1.2vw; 
-    padding-right: 1.2vw; 
+    padding-left: 0.5vw; 
+    padding-right: 0.5vw; 
 } 
 
 .square img {  
@@ -34,6 +34,16 @@
     background-color: #000000cb; /* Цвет фона */
     border: 3px solid #c32b2b; /* Граница вокруг статьи */
 }
+.vyvod {  
+    display: flex;  
+    justify-content: center; /* Центрируем элементы по горизонтали */ 
+    align-items: center; /* Центрируем элементы по вертикали */ 
+    padding: 10px;  
+    border-radius: 8px;  
+    flex-wrap: wrap; /* Позволяет элементам обтягиваться на новые строки */
+}
+
+
 .vvod {
     padding: 10px;
     margin-top: 0.7vw;
@@ -57,8 +67,27 @@
 
 }
 
+
+.extra-text {
+    margin-top: 10px;
+    color: #495057;
+}
+
 .terminy {
     color: #ffffff;
     margin: 0; /* Убираем отступы у заголовка */
     padding-bottom: 5px; /* Отступ снизу для визуального разделения */
+}
+button {
+    background-color: #6f00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #592c94;
 }

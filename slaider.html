@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style_fon.css">
-    <link rel="stylesheet" href="style_menu.css">
-    <link rel="stylesheet" href="style_footer.css">
-    <link rel="stylesheet" href="style_slaid.css">
+    <link rel="stylesheet" href="./css/style_menu.css">
+    <link rel="stylesheet" href="./css/style_footer.css">
+    <link rel="stylesheet" href="./css/style_slaid.css">
 
 </head>
 <body>
@@ -15,43 +15,61 @@
 <div class="fon">
     <DIV class="fon1">
 
+
         <div class="menu" id="menu">
-            <a href="index.html">Главное</a>
-            <a href="slovo.html">Словарик</a>
-            <a href="slaider.html">Слайдер</a>
-            <a href="index.html">Тест</a>
-            <a href="index.html">Личные данные</a>
+            <a href="index.html" class="menu_a">Чумной доктор</a>
+            <a href="index.html" class="menu_a" >Главное</a>
+            <a href="slovo.html" class="menu_a">Словарик</a>
+            <a href="slaider.html" class="menu_a" style="color: blueviolet;">Слайдер</a>
+            <a href="test.html" class="menu_a" >Тест</a>
+            <a href="dannye.html" class="menu_a"> Личные данные</a>
+            <a href="dannye.html" class="menu_a"><i id="name"></i></a>
+            <a href="reg.html" class="button">Выйти</a>
         </div>
 
+
     
+
+
+        <div style="height: 10vw;"></div>
+
+        <div class="zdes_slaider">
+            <h1>Слайдер</h1>
+            <div class="sladery">
+                <div class="slids">
+                    <div class="def"><img src="./img/ff1.jpg" alt=""></div>
+                    <div class="def"><img src="./img/ff2.jpg" alt=""></div>
+                    <div class="def"><img src="./img/ff3.jpg" alt=""></div>
+                    <div class="def"><img src="./img/ff4.jpg" alt=""></div>
+                    <div class="def"><img src="./img/ff5.jpg" alt=""></div>
+                </div>
+
+                <div class="slider1">
+                    <div class="def1">Души меня, Дима Дубин</div>
+                    <div class="def1">Души меня, Олег Волков</div>
+                    <div class="def1">Души меня, Вадим Дракон</div>
+                    <div class="def1">Души меня, Чумной Доктор</div>
+                    <div class="def1">Души меня, Майор Гром</div>
+                </div>
+            </div>
+
+            <div class="knopki"> 
+                <div class="controls"> 
+                    <button id="btn_backward"><</button> 
+                    <div id="slide_number" class="slide_number">Текущий слайд: 1</div>
+                    <button id="btn_forward">></button> 
+                </div> 
+            </div>
+        </div>
+
+
 
 
         <div style="height: 5vw;"></div>
-
-        <div class="container">
-            <!-- Слайдер, содержащий изображения -->
-            <div class="slids">
-                <div class="def"><img src="ff1.jpg" alt=""></div>
-                <div class="def"><img src="ff2.jpg" alt=""></div>
-                <div class="def"><img src="ff3.jpg" alt=""></div>
-                <div class="def"><img src="ff4.jpg" alt=""></div>
-                <div class="def"><img src="ff5.jpg" alt=""></div>
-            </div>
-    
-            <!-- Элементы управления для навигации по слайдам -->
-            <div class="controls">
-                <button id="btn_backward"><</button>
-                <button id="btn_forward">></button>
-            </div>
-    
-
-        </div>
-
-
-
-        <div style="height: 20vw;"></div>
        
         <script src="script_slaider.js"></script>
+        <script src="script2.js"></script>
+
         
         <footer class="foot">
             <div class="u_menia_chto_to_ne_rab">
@@ -59,9 +77,9 @@
                     <h4>Меню</h4>
                     <a href="index.html">Главное</a>
                     <a href="slovo.html">Словарик</a>
-                    <a href="slaider.html">Слайдер</a>
-                    <a href="index.html">Тест</a>
-                    <a href="index.html">Личные данные</a>
+                    <a href="slaider.html" >Слайдер</a>
+                    <a href="test.html">Тест</a>
+                    <a href="dannye.html">Личные данные</a>
                 </div>
 
                 <div class="ssylki_na_info">
